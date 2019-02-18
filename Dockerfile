@@ -18,3 +18,9 @@ RUN cp -r /sratoolkit.2.9.4-ubuntu64/bin/* /usr/bin
 
 #Remove /sratoolkit.2.9.4-ubuntu64.
 RUN rm -rf /sratoolkit.2.9.4-ubuntu64*
+
+#Make a new directory.
+RUN mkdir customsra
+
+#Change HOME.
+ENV HOME=customsra
